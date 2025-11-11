@@ -12,7 +12,6 @@ It features a clean design, responsive layout, and smooth interactions, allowing
 ---
 
 ## 🌐 Live Demos
-- 🚀 **Netlify Demo:** [alexia-portfolio1.netlify.app](https://alexia-portfolio1.netlify.app/)
 - 🚀 **GitHub Pages Demo:** [alexiatzouganatou.github.io/portfolio](https://alexiatzouganatou.github.io/portfolio/)
 - 💾 **Source Code (GitHub Repository):** [github.com/alexiatzouganatou/portfolio](https://github.com/alexiatzouganatou/portfolio.git)
 
