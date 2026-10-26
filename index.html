@@ -1,160 +1,979 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexia Tzouganatou | Portfolio</title>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Alexia Tzouganatou | Web Developer</title>
 
-  <!-- CSS -->
+  <meta
+    name="description"
+    content="Το portfolio της Alexia Tzouganatou. Websites επιχειρήσεων και προσωπικά projects με HTML, CSS και JavaScript."
+  />
+
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
+
 <body>
+  <a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
 
-  <!-- ===== HEADER ===== -->
+  <!-- HEADER -->
   <header>
-    <nav class="navbar">
-      <h1 class="logo">Alexia Tzouganatou</h1>
+    <a class="logo" href="#home" aria-label="Αρχική">
+      AT<span>.</span>
+    </a>
 
-      <!-- Hamburger Icon -->
-      <div class="menu-toggle" id="menu-toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+    <button
+      class="menu"
+      type="button"
+      aria-controls="navigation"
+      aria-expanded="false"
+    >
+      Μενού ☰
+    </button>
 
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav id="navigation" aria-label="Κύρια πλοήγηση">
+      <a href="#work">Έργα</a>
+      <a href="#about">Σχετικά</a>
+      <a href="#resume">Βιογραφικό</a>
+      <a href="#certifications">Σεμινάρια</a>
+      <a class="nav-contact" href="#contact">Ας μιλήσουμε ↗</a>
     </nav>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section id="home" class="hero fade-in">
-    <img
-      class="hero-avatar"
-      src="foto.jpeg"
-      alt="Alexia Tzouganatou portrait"
-      width="140"
-      height="140"
-      loading="lazy"
-    />
-    <h2>Hello, I'm <span>Alexia</span> 👋</h2>
-    <p>A passionate <strong>Computer Science student</strong> who loves creating modern, responsive, and user-friendly websites.</p>
-    <p>I’m currently focusing on <strong>Web Design, HTML, CSS, JavaScript, and UI/UX</strong>.</p>
+  <main id="main">
 
-    <div class="hero-actions">
-      <a class="btn-primary" href="ALEXIA.pdf" download>
-        <i class="fa-solid fa-file-arrow-down"></i> Download CV
-      </a>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          ΑΝΑΖΗΤΩ ΤΗΝ ΠΡΩΤΗ ΜΟΥ REMOTE ΘΕΣΗ
+        </p>
+
+        <p class="intro">Γεια σου, είμαι η Alexia.</p>
+
+        <h1>
+          Δίνω μορφή<br />
+          στις ιδέες,<br />
+          <em>στο web.</em>
+        </h1>
+
+        <p class="lead">
+          Junior Web Developer με έμφαση στον σχεδιασμό και την ανάπτυξη
+          ιστοσελίδων. Συνδυάζω κώδικα, καθαρή αισθητική και διάθεση
+          για συνεχή μάθηση.
+        </p>
+
+        <div class="actions">
+          <a class="button" href="#work">
+            Δες τα έργα μου <span aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            class="text-link"
+            href="https://github.com/alexiatzouganatou"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="portrait">
+        <img
+          src="alexia.png"
+          alt="Η Alexia Tzouganatou"
+          width="1254"
+          height="1254"
+          fetchpriority="high"
+        />
+
+        <div class="portrait-note">
+          <span>Alexia Tzouganatou</span>
+          <small>Junior Web Developer · Ελλάδα</small>
+        </div>
+
+        <span class="portrait-label">
+          CODE / DESIGN / CREATE
+        </span>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <div class="tech-strip">
+      <span>ΟΙ ΤΕΧΝΟΛΟΓΙΕΣ ΜΟΥ</span>
+      <strong>HTML</strong>
+      <i aria-hidden="true">✳</i>
+      <strong>CSS</strong>
+      <i aria-hidden="true">✳</i>
+      <strong>JavaScript</strong>
+      <i aria-hidden="true">✳</i>
+      <strong>GitHub</strong>
     </div>
-  </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>🎓 I’m a <strong>Junior Web Developer & UI/UX Designer</strong>, a Computer Science student (Programming track) at <strong>IST College</strong>. While I study software development in general, my passion is crafting websites, designing user experiences (UI/UX), and creating visual content.</p>
+    <!-- PROJECTS -->
+    <section id="work" class="section">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow">01 / ΕΠΙΛΕΓΜΕΝΑ ΕΡΓΑ</p>
 
-    <p>💻 I combine technical skills (<strong>HTML, CSS, JavaScript, SQL, C#, Java</strong>) with creativity and aesthetics to deliver complete solutions for the online presence of businesses.</p>
+          <h2>
+            Από την ιδέα<br />
+            στην ιστοσελίδα.
+          </h2>
+        </div>
 
-    <p>🔍 I’m looking for internship opportunities or freelance projects in:</p>
-    <ul class="about-list">
-      <li>• Website creation or redesign</li>
-      <li>• UI/UX design</li>
-      <li>• Social media content (Instagram posts, Canva designs)</li>
-    </ul>
+        <p>
+          Websites που έχω δημιουργήσει για επιχειρήσεις και προσωπικά
+          projects μέσα από τα οποία εξελίσσω τις γνώσεις μου.
+        </p>
+      </div>
 
-    <p>✨ I’m creative, organized, and I love continuous learning and growth.</p>
-  </section>
+      <div class="filters" aria-label="Φίλτρα έργων">
+        <button
+          class="selected"
+          type="button"
+          data-filter="all"
+          aria-pressed="true"
+        >
+          Όλα τα έργα
+        </button>
 
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h3>Personal Portfolio Website</h3>
-      <p>A simple, modern, and responsive portfolio built with HTML, CSS, and JavaScript.</p>
-      <a href="https://alexiatzouganatou.github.io/portfolio/" target="_blank" class="btn">Live Demo</a>
-      <a href="https://github.com/alexiatzouganatou/portfolio.git" target="_blank" class="btn secondary">GitHub</a>
-    </div>
+        <button
+          type="button"
+          data-filter="website"
+          aria-pressed="false"
+        >
+          Websites επιχειρήσεων
+        </button>
 
-    <div class="project-card">
-      <h3>SmartQuiz</h3>
-      <p>An interactive quiz game that fetches random questions from an API and challenges users to test their knowledge.</p>
-      <a href="https://alexiatzouganatou.github.io/SmartQuiz/" target="_blank" class="btn">Live Demo</a>
-      <a href="https://github.com/alexiatzouganatou/SmartQuiz.git" target="_blank" class="btn secondary">GitHub</a>
-    </div>
-  <div class="project-card">
-  <h3>GlowSnake</h3>
-  <p>
-    A modern, neon-styled remake of the classic Snake game, designed with a clean UI and built using HTML, CSS, and JavaScript. 
-    Fully responsive, smooth gameplay, and optimized for both desktop and mobile devices.
-  </p>
-  <a href="https://alexiatzouganatou.github.io/GlowSnake/" target="_blank" class="btn">Live Demo</a>
-  <a href="https://github.com/alexiatzouganatou/GlowSnake" target="_blank" class="btn secondary">GitHub</a>
-</div>
-<div class="project-card">
-  <h3>Bordeaux Beauty</h3>
-  <p>
-    A modern and elegant beauty & nails website featuring an appointment booking system.
-    The project combines frontend development with backend booking logic, simulating a real-world professional scenario.
-  </p>
-  <a href="https://alexiatzouganatou.github.io/BordeauxBeauty/" target="_blank" class="btn">
-    Live Demo
-  </a>
-  <a href="https://github.com/alexiatzouganatou/BordeauxBeauty.git" target="_blank" class="btn secondary">
-    GitHub
-  </a>
-</div>
-    <div class="project-card">
-      <h3>Coming Soon...</h3>
-      <p>More projects will be added here as I continue learning and building!</p>
-    </div>
-</div>
+        <button
+          type="button"
+          data-filter="project"
+          aria-pressed="false"
+        >
+          Προσωπικά projects
+        </button>
+      </div>
 
-  </div>
-</section>
+      <div class="work-grid">
 
-<!-- ===== CONTACT ===== -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p style="text-align:center; margin-bottom:20px;">Let’s connect — you can find me here:</p>
+        <!-- OTIUM RESIDENCE -->
+        <article class="work-card" data-kind="website">
+          <a
+            class="project-visual sand"
+            href="https://otiumresidence.com/el/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Προβολή Otium Residence"
+          >
+            <div class="window-bar">
+              <span aria-hidden="true">● ● ●</span>
+              <span>otiumresidence.com</span>
+              <span aria-hidden="true">↗</span>
+            </div>
 
-  <ul class="contact-links">
-    <li class="contact-card">
-      <a href="https://www.linkedin.com/in/alexia-tzouganatou" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-        LinkedIn
+            <div class="project-art">
+              <small>Ιστοσελίδα καταλύματος</small>
+              <strong>Otium Residence</strong>
+              <span class="art-rule" aria-hidden="true"></span>
+              <small>otiumresidence.com</small>
+            </div>
+
+            <span class="visual-caption">
+              ΓΡΑΦΙΣΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ ΕΡΓΟΥ
+            </span>
+          </a>
+
+          <div class="card-meta">
+            <span>01 / WEBSITE</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <h3>Otium Residence</h3>
+
+          <p>
+            Σχεδιασμός και ανάπτυξη ιστοσελίδας για την παρουσίαση
+            του καταλύματος Otium Residence στην Κεφαλονιά.
+          </p>
+
+          <div class="card-links">
+            <a
+              href="https://otiumresidence.com/el/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Προβολή website ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- ROSOLYMOS GROUP -->
+        <article class="work-card" data-kind="website">
+          <a
+            class="project-visual olive"
+            href="https://rosolymosgroup.com/el/home.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Προβολή Rosolymos Group"
+          >
+            <div class="window-bar">
+              <span aria-hidden="true">● ● ●</span>
+              <span>rosolymosgroup.com</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+
+            <div class="project-art">
+              <small>Ιστοσελίδα επιχείρησης</small>
+              <strong>Rosolymos Group</strong>
+              <span class="art-rule" aria-hidden="true"></span>
+              <small>rosolymosgroup.com</small>
+            </div>
+
+            <span class="visual-caption">
+              ΓΡΑΦΙΣΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ ΕΡΓΟΥ
+            </span>
+          </a>
+
+          <div class="card-meta">
+            <span>02 / WEBSITE</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <h3>Rosolymos Group</h3>
+
+          <p>
+            Δημιουργία εταιρικής ιστοσελίδας για την παρουσίαση
+            της επιχείρησης στο διαδίκτυο.
+          </p>
+
+          <div class="card-links">
+            <a
+              href="https://rosolymosgroup.com/el/home.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Προβολή website ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- MAROULI'S TAXI SERVICES -->
+        <article class="work-card" data-kind="website">
+          <a
+            class="project-visual sand"
+            href="https://maroulistaxiservice.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Προβολή Marouli’s Taxi Services"
+          >
+            <div class="window-bar">
+              <span aria-hidden="true">● ● ●</span>
+              <span>maroulistaxiservice.com</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+
+            <div class="project-art">
+              <small>Υπηρεσίες μεταφοράς</small>
+              <strong>Marouli’s Taxi Services</strong>
+              <span class="art-rule" aria-hidden="true"></span>
+              <small>maroulistaxiservice.com</small>
+            </div>
+
+            <span class="visual-caption">
+              ΓΡΑΦΙΣΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ ΕΡΓΟΥ
+            </span>
+          </a>
+
+          <div class="card-meta">
+            <span>03 / WEBSITE</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <h3>Marouli’s Taxi Services</h3>
+
+          <p>
+            Ιστοσελίδα παρουσίασης υπηρεσιών ταξί στην Κεφαλονιά,
+            με πληροφορίες υπηρεσιών και τρόπους επικοινωνίας.
+          </p>
+
+          <div class="card-links">
+            <a
+              href="https://maroulistaxiservice.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Προβολή website ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- ELYSIAN SIGNATURE -->
+        <article class="work-card" data-kind="website">
+          <a
+            class="project-visual dark"
+            href="https://elysiansignature.gr/el/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Προβολή Elysian Signature"
+          >
+            <div class="window-bar">
+              <span aria-hidden="true">● ● ●</span>
+              <span>elysiansignature.gr</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+
+            <div class="project-art">
+              <small>Επαγγελματική παρουσία στο web</small>
+              <strong>Elysian Signature</strong>
+              <span class="art-rule" aria-hidden="true"></span>
+              <small>elysiansignature.gr</small>
+            </div>
+
+            <span class="visual-caption">
+              ΓΡΑΦΙΣΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ ΕΡΓΟΥ
+            </span>
+          </a>
+
+          <div class="card-meta">
+            <span>04 / WEBSITE</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <h3>Elysian Signature</h3>
+
+          <p>
+            Σχεδιασμός και δημιουργία ιστοσελίδας για την online
+            παρουσία της Elysian Signature.
+          </p>
+
+          <div class="card-links">
+            <a
+              href="https://elysiansignature.gr/el/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Προβολή website ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- SMARTQUIZ -->
+        <article class="work-card" data-kind="project">
+          <a
+            class="project-visual blue"
+            href="https://alexiatzouganatou.github.io/SmartQuiz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Προβολή SmartQuiz"
+          >
+            <div class="window-bar">
+              <span aria-hidden="true">● ● ●</span>
+              <span>QUIZ / LEARN / REPEAT</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+
+            <div class="project-art">
+              <small>Διαδραστική εφαρμογή</small>
+              <strong>SmartQuiz</strong>
+              <span class="art-rule" aria-hidden="true"></span>
+              <small>QUIZ / LEARN / REPEAT</small>
+            </div>
+
+            <span class="visual-caption">
+              ΓΡΑΦΙΣΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ ΕΡΓΟΥ
+            </span>
+          </a>
+
+          <div class="card-meta">
+            <span>05 / PERSONAL PROJECT</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <h3>SmartQuiz</h3>
+
+          <p>
+            Παιχνίδι γνώσεων με τυχαίες ερωτήσεις από API,
+            με HTML, CSS και JavaScript.
+          </p>
+
+          <div class="card-links">
+            <a
+              href="https://alexiatzouganatou.github.io/SmartQuiz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Προβολή website ↗
+            </a>
+
+            <a
+              href="https://github.com/alexiatzouganatou/SmartQuiz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- GLOWSNAKE -->
+        <article class="work-card" data-kind="project">
+          <a
+            class="project-visual snake"
+            href="https://alexiatzouganatou.github.io/GlowSnake/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Προβολή GlowSnake"
+          >
+            <div class="window-bar">
+              <span aria-hidden="true">● ● ●</span>
+              <span>PLAY. GROW. REPEAT.</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+
+            <div class="project-art">
+              <small>Browser game</small>
+              <strong>GlowSnake</strong>
+              <span class="art-rule" aria-hidden="true"></span>
+              <small>PLAY. GROW. REPEAT.</small>
+            </div>
+
+            <span class="visual-caption">
+              ΓΡΑΦΙΣΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ ΕΡΓΟΥ
+            </span>
+          </a>
+
+          <div class="card-meta">
+            <span>06 / PERSONAL PROJECT</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <h3>GlowSnake</h3>
+
+          <p>
+            Μια neon εκδοχή του κλασικού Snake,
+            υλοποιημένη με HTML, CSS και JavaScript.
+          </p>
+
+          <div class="card-links">
+            <a
+              href="https://alexiatzouganatou.github.io/GlowSnake/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Προβολή website ↗
+            </a>
+
+            <a
+              href="https://github.com/alexiatzouganatou/GlowSnake"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- BORDEAUX BEAUTY -->
+        <article class="work-card" data-kind="project">
+          <a
+            class="project-visual wine"
+            href="https://alexiatzouganatou.github.io/BordeauxBeauty/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Προβολή Bordeaux Beauty"
+          >
+            <div class="window-bar">
+              <span aria-hidden="true">● ● ●</span>
+              <span>BEAUTY IN THE DETAILS</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+
+            <div class="project-art">
+              <small>Concept website</small>
+              <strong>Bordeaux Beauty</strong>
+              <span class="art-rule" aria-hidden="true"></span>
+              <small>BEAUTY IN THE DETAILS</small>
+            </div>
+
+            <span class="visual-caption">
+              ΓΡΑΦΙΣΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ ΕΡΓΟΥ
+            </span>
+          </a>
+
+          <div class="card-meta">
+            <span>07 / PERSONAL PROJECT</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <h3>Bordeaux Beauty</h3>
+
+          <p>
+            Προσωπικό project ιστοσελίδας ομορφιάς και περιποίησης,
+            με παρουσίαση υπηρεσιών και διεπαφή ραντεβού.
+          </p>
+
+          <div class="card-links">
+            <a
+              href="https://alexiatzouganatou.github.io/BordeauxBeauty/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Προβολή website ↗
+            </a>
+
+            <a
+              href="https://github.com/alexiatzouganatou/BordeauxBeauty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- EXPENSE TRACKER -->
+        <article class="work-card" data-kind="project">
+          <a
+            class="project-visual expense"
+            href="https://github.com/alexiatzouganatou/Expense-Tracker"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Προβολή Expense Tracker"
+          >
+            <div class="window-bar">
+              <span aria-hidden="true">● ● ●</span>
+              <span>TRACK / ORGANIZE</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+
+            <div class="project-art">
+              <small>Προσωπικό project</small>
+              <strong>Expense Tracker</strong>
+              <span class="art-rule" aria-hidden="true"></span>
+              <small>TRACK / ORGANIZE</small>
+            </div>
+
+            <span class="visual-caption">
+              ΓΡΑΦΙΣΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ ΕΡΓΟΥ
+            </span>
+          </a>
+
+          <div class="card-meta">
+            <span>08 / PERSONAL PROJECT</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <h3>Expense Tracker</h3>
+
+          <p>
+            Project καταγραφής εξόδων σε JavaScript.
+            Ο πηγαίος κώδικας είναι διαθέσιμος στο GitHub.
+          </p>
+
+          <div class="card-links">
+            <a
+              href="https://github.com/alexiatzouganatou/Expense-Tracker"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Προβολή κώδικα ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- TRAVELVIBES -->
+        <article class="work-card" data-kind="project">
+          <a
+            class="project-visual travel"
+            href="https://github.com/alexiatzouganatou/TravelVibes"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Προβολή TravelVibes"
+          >
+            <div class="window-bar">
+              <span aria-hidden="true">● ● ●</span>
+              <span>EXPLORE MORE</span>
+              <span aria-hidden="true">↗</span>
+            </div>
+
+            <div class="project-art">
+              <small>Προσωπικό project</small>
+              <strong>TravelVibes</strong>
+              <span class="art-rule" aria-hidden="true"></span>
+              <small>EXPLORE MORE</small>
+            </div>
+
+            <span class="visual-caption">
+              ΓΡΑΦΙΣΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ ΕΡΓΟΥ
+            </span>
+          </a>
+
+          <div class="card-meta">
+            <span>09 / PERSONAL PROJECT</span>
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <h3>TravelVibes</h3>
+
+          <p>
+            Project με ταξιδιωτική θεματολογία,
+            διαθέσιμο στο GitHub.
+          </p>
+
+          <div class="card-links">
+            <a
+              href="https://github.com/alexiatzouganatou/TravelVibes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Προβολή κώδικα ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+      <div>
+        <p class="eyebrow">02 / ΣΧΕΤΙΚΑ ΜΕ ΕΜΕΝΑ</p>
+
+        <h2>
+          Περιέργεια.<br />
+          Δημιουργικότητα.<br />
+          <em>Εξέλιξη.</em>
+        </h2>
+      </div>
+
+      <div class="about-copy">
+        <p class="large">
+          Μου αρέσει να μετατρέπω μια ιδέα σε κάτι που μπορείς
+          να δεις, να χρησιμοποιήσεις και να εξελίξεις.
+        </p>
+
+        <p>
+          Έχω ολοκληρώσει τις σπουδές μου στην Επιστήμη Υπολογιστών
+          (Computer Science) στο IST College και αναμένω την απονομή
+          του πτυχίου μου τον Νοέμβριο του 2026.
+        </p>
+
+        <p>
+          Μέσα από websites επιχειρήσεων και προσωπικά projects,
+          εξελίσσω τις γνώσεις μου στην ανάπτυξη και τον σχεδιασμό
+          ιστοσελίδων με HTML, CSS και JavaScript.
+        </p>
+
+        <p>
+          Αναζητώ την πρώτη μου επαγγελματική ευκαιρία εξ αποστάσεως,
+          κυρίως ως Junior Web Developer ή Junior Web Designer.
+          Με ενδιαφέρουν επίσης ευκαιρίες υποστήριξης σε
+          Social Media Marketing, CRM και Back Office.
+        </p>
+
+        <div class="skills" aria-label="Δεξιότητες">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>SQL</span>
+          <span>C#</span>
+          <span>Java</span>
+          <span>Canva</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="resume section">
+      <div>
+        <p class="eyebrow">03 / Η ΔΙΑΔΡΟΜΗ ΜΟΥ</p>
+
+        <h2>
+          Το επόμενο βήμα<br />
+          ξεκινά εδώ.
+        </h2>
+
+        <p>
+          Σπουδές, πρακτική εφαρμογή μέσα από projects
+          και διάθεση να μάθω μέσα σε μια ομάδα.
+        </p>
+
+        <button
+          class="button outline"
+          id="print-resume"
+          type="button"
+        >
+          Αποθήκευση σύνοψης σε PDF ↗
+        </button>
+
+        <small class="print-hint">
+          Ανοίγει την εκτύπωση του browser.
+          Επίλεξε «Αποθήκευση ως PDF».
+        </small>
+      </div>
+
+      <div class="timeline">
+        <div>
+          <span>ΕΚΠΑΙΔΕΥΣΗ</span>
+          <h3>Computer Science</h3>
+          <p>IST College</p>
+
+          <small>
+            Ολοκλήρωση σπουδών · Απονομή πτυχίου: Νοέμβριος 2026
+          </small>
+        </div>
+
+        <div>
+          <span>ΕΦΑΡΜΟΓΗ ΓΝΩΣΕΩΝ</span>
+          <h3>Websites &amp; προσωπικά projects</h3>
+
+          <p>
+            Ανάπτυξη ιστοσελίδων για επιχειρήσεις και δημιουργία
+            εφαρμογών στο GitHub.
+          </p>
+        </div>
+
+        <div>
+          <span>ΕΠΑΓΓΕΛΜΑΤΙΚΟΣ ΣΤΟΧΟΣ</span>
+          <h3>Junior Web Developer / Web Designer</h3>
+
+          <p>
+            Πρώτη επαγγελματική ευκαιρία · Εξ αποστάσεως
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section certifications">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow">04 / ΣΥΝΕΧΗΣ ΕΚΠΑΙΔΕΥΣΗ</p>
+
+          <h2>
+            Σεμινάρια &amp;<br />
+            Πιστοποιήσεις.
+          </h2>
+        </div>
+
+        <p>
+          Συμπληρωματική εκπαίδευση στην τεχνολογία,
+          το digital marketing και τη διοίκηση ανθρώπινου δυναμικού.
+        </p>
+      </div>
+
+      <div class="certificate-grid">
+
+        <article class="certificate">
+          <span class="cert-mark" aria-hidden="true">✓</span>
+
+          <div>
+            <h3>Diploma in Cyber Security</h3>
+            <p>IST College</p>
+            <small>Βεβαίωση ολοκλήρωσης</small>
+          </div>
+        </article>
+
+        <article class="certificate">
+          <span class="cert-mark" aria-hidden="true">✓</span>
+
+          <div>
+            <h3>Social Media &amp; Influencer Marketing</h3>
+            <p>IST College</p>
+            <small>Βεβαίωση ολοκλήρωσης</small>
+          </div>
+        </article>
+
+        <article class="certificate">
+          <span class="cert-mark" aria-hidden="true">✓</span>
+
+          <div>
+            <h3>
+              Τεχνητή Νοημοσύνη &amp; ChatGPT:
+              Εργαλεία και Πρακτικές Εφαρμογές
+            </h3>
+
+            <p>IST College</p>
+            <small>Βεβαίωση ολοκλήρωσης</small>
+          </div>
+        </article>
+
+        <article class="certificate">
+          <span class="cert-mark" aria-hidden="true">✓</span>
+
+          <div>
+            <h3>Diploma in Human Resources Management</h3>
+            <p>IST College</p>
+            <small>Βεβαίωση ολοκλήρωσης</small>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <p class="eyebrow">05 / ΕΠΙΚΟΙΝΩΝΙΑ</p>
+
+      <h2>
+        Ας δημιουργήσουμε<br />
+        <em>κάτι μαζί.</em>
+      </h2>
+
+      <p>
+        Έχεις μια ευκαιρία για junior θέση ή θέλεις να συζητήσουμε
+        ένα project; Θα χαρώ να επικοινωνήσουμε.
+      </p>
+
+      <a
+        class="email"
+        href="mailto:alexiaatzouganatouuu@gmail.com"
+      >
+        Στείλε μου ένα email ↗
       </a>
-    </li>
 
-    <li class="contact-card">
-      <a href="https://github.com/alexiatzouganatou" target="_blank">
-        <i class="fab fa-github"></i>
-        GitHub
-      </a>
-    </li>
+      <div class="contact-bottom">
+        <div>
+          <a
+            href="https://www.linkedin.com/in/alexia-tzouganatou/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
 
-    <li class="contact-card">
-      <a href="mailto:alexiaatzouganatouuu@gmail.com?subject=Portfolio%20Contact%20-%20Alexia%20Tzouganatou">
-        <i class="fa-solid fa-envelope"></i>
-        alexiaatzouganatouuu@gmail.com
-      </a>
-      <button class="copy-btn" data-email="alexiaatzouganatouuu@gmail.com">Copy</button>
-    </li>
-  </ul>
-</section>
-  <!-- ===== FOOTER ===== -->
+          <a
+            href="https://github.com/alexiatzouganatou"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+          <a
+            href="https://www.instagram.com/alexiatzouganatou.web/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram · Web ↗
+          </a>
+
+          <a
+            href="https://www.instagram.com/alexia.tzouganatouu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram · Προσωπικό ↗
+          </a>
+
+          <a
+            href="https://www.facebook.com/alexia.tzouganatouu?locale=el_GR"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook ↗
+          </a>
+
+          <button id="copy-email" type="button">
+            Αντιγραφή email
+          </button>
+        </div>
+
+        <span id="copy-status" role="status"></span>
+
+        <small>
+          Ληξούρι, Ελλάδα · Διαθέσιμη για remote εργασία
+        </small>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Alexia Tzouganatou. All rights reserved.</p>
+    <a class="logo" href="#home" aria-label="Αρχική">
+      AT<span>.</span>
+    </a>
+
+    <span>© 2026 Alexia Tzouganatou</span>
+
+    <a href="#home">Πίσω στην αρχή ↑</a>
   </footer>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+  <!-- PRINTABLE SUMMARY -->
+  <section class="print-only" aria-label="Εκτυπώσιμη σύνοψη">
+    <h1>Alexia Tzouganatou</h1>
+    <h2>Junior Web Developer | Web Design</h2>
+
+    <p>
+      Ληξούρι, Ελλάδα · Αναζήτηση πρώτης remote θέσης
+    </p>
+
+    <p>alexiaatzouganatouuu@gmail.com</p>
+
+    <h3>Εκπαίδευση</h3>
+
+    <p>
+      Computer Science — IST College.
+      Ολοκληρωμένες σπουδές, αναμενόμενη απονομή πτυχίου
+      τον Νοέμβριο 2026.
+    </p>
+
+    <h3>Γνώσεις</h3>
+    <p>HTML, CSS, JavaScript, SQL, C#, Java, Canva</p>
+
+    <h3>Websites</h3>
+
+    <p>
+      Otium Residence —
+      https://otiumresidence.com/el/index.html
+    </p>
+
+    <p>
+      Rosolymos Group —
+      https://rosolymosgroup.com/el/home.html
+    </p>
+
+    <p>
+      Marouli’s Taxi Services —
+      https://maroulistaxiservice.com/
+    </p>
+
+    <p>
+      Elysian Signature —
+      https://elysiansignature.gr/el/index.html
+    </p>
+
+    <h3>Σεμινάρια &amp; Πιστοποιήσεις — IST College</h3>
+
+    <p>Diploma in Cyber Security</p>
+    <p>Social Media &amp; Influencer Marketing</p>
+
+    <p>
+      Τεχνητή Νοημοσύνη &amp; ChatGPT:
+      Εργαλεία και Πρακτικές Εφαρμογές
+    </p>
+
+    <p>Diploma in Human Resources Management</p>
+
+    <h3>Προσωπικά projects</h3>
+
+    <p>
+      SmartQuiz · GlowSnake · Bordeaux Beauty ·
+      Expense Tracker · TravelVibes
+    </p>
+
+    <p>
+      GitHub: https://github.com/alexiatzouganatou
+    </p>
+
+    <p>
+      LinkedIn: https://www.linkedin.com/in/alexia-tzouganatou/
+    </p>
+  </section>
 </body>
 </html>
